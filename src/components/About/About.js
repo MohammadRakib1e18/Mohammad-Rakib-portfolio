@@ -43,14 +43,6 @@ const About = () => {
         </p>
       </div>
       <div className="mt-8">
-        {/* <a
-          className="inline-block w-[130px] text-center text-slate-200 font-bold bg-sky-600 hover:bg-sky-500 py-1 px-4 rounded-full"
-          href="https://www.linkedin.com/in/mohammad-rakib1/"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          HIRE ME
-        </a> */}
         <a
           className="inline-block text-center font-bold bg-transparent border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-slate-200 py-2 px-4 rounded-none"
           href="/Mohammad Rakib-Resume.pdf"

@@ -7,38 +7,44 @@ import { FaDownload } from "react-icons/fa";
 const menu = (
   <>
     <div className="avatar online h-32 w-32 mx-auto">
-      <img src={user} alt="" className="w-full rounded-full border-2" />
+      <img src={user} alt="" className="w-full rounded-full border-2 border-sky-500" />
     </div>
-    <Link to="/" className="bg-slate-700 hover:bg-sky-600 rounded-full py-1">
+    <Link to="/" className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1">
       <li>Home</li>
     </Link>
     <Link
       to="/about"
-      className="bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
     >
       <li>About me</li>
     </Link>
     <Link
       to="/portfolio"
-      className="bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
     >
       <li>Portfolio</li>
     </Link>
     <Link
       to="/services"
-      className="bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
     >
       <li>Services</li>
     </Link>
     <Link
       to="/education"
-      className="bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
     >
       <li>Education</li>
     </Link>
     <Link
+      to="/blogs"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+    >
+      <li>Blogs</li>
+    </Link>
+    <Link
       to="/contact"
-      className="bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
     >
       <li>Contact</li>
     </Link>
@@ -71,7 +77,7 @@ const MainLayout = () => {
         </div>
         <div className="drawer-side ">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-[200px] space-y-3 text-center text-slate-200 bg-slate-800">
+          <ul className="menu p-4 w-[200px] space-y-3  text-slate-200 bg-slate-800">
             {menu}
           </ul>
         </div>
