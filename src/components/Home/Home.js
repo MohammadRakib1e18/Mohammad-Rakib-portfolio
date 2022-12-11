@@ -27,7 +27,7 @@ const Home = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 50,
+          fpsLimit: 20,
 
           particles: {
             color: {

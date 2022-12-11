@@ -7,9 +7,16 @@ import { FaDownload } from "react-icons/fa";
 const menu = (
   <>
     <div className="avatar online h-32 w-32 mx-auto">
-      <img src={user} alt="" className="w-full rounded-full border-2 border-sky-500" />
+      <img
+        src={user}
+        alt=""
+        className="w-full rounded-full border-2 border-sky-500"
+      />
     </div>
-    <Link to="/" className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1">
+    <Link
+      to="/"
+      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+    >
       <li>Home</li>
     </Link>
     <Link
@@ -31,10 +38,10 @@ const menu = (
       <li>Services</li>
     </Link>
     <Link
-      to="/education"
+      to="/qualification"
       className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
     >
-      <li>Education</li>
+      <li>Qualification</li>
     </Link>
     <Link
       to="/blogs"
