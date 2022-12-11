@@ -15,13 +15,13 @@ const menu = (
     </div>
     <Link
       to="/"
-      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700  hover:bg-sky-600 rounded-full py-1"
     >
       <li>Home</li>
     </Link>
     <Link
       to="/about"
-      className="pl-12 bg-slate-700 hover:bg-sky-600 rounded-full py-1"
+      className="pl-12 bg-slate-700  hover:bg-sky-600 rounded-full py-1"
     >
       <li>About me</li>
     </Link>

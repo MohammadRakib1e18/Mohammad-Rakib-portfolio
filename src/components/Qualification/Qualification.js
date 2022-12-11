@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSun } from "react-icons/fa";
 import SingleProgress from "./SingleProgress";
 
 const codingSkill = [
@@ -50,8 +51,9 @@ const developmentSkill = [
 const Qualification = () => {
   return (
     <div className="pt-12 pl-12 pr-4 font-serif">
-      <h2 className="text-sky-500 font-bold text-4xl border-b-2 border-dotted pb-2 border-b-slate-500">
-        Education & Course
+      <h2 className="text-sky-500 font-bold text-4xl border-b-2 border-dotted pb-2 border-b-slate-500 flex justify-between">
+        <span>Education & Course</span>
+        <FaSun className="spinnerAnimation" />
       </h2>
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         <div className="bg-slate-600 pl-12 p-4 border border-cyan-400 hover:border-sky-500 rounded-md text-slate-200">
