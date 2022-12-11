@@ -12,7 +12,6 @@ const Home = () => {
   const particlesLoaded = useCallback(async (container) => {}, []);
   return (
     <div
-      data-aos="zoom-in"
       style={{
         background: `url(${homeImg})`,
         backgroundPosition: "center",
@@ -28,7 +27,7 @@ const Home = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          fpsLimit: 120,
+          fpsLimit: 50,
 
           particles: {
             color: {
