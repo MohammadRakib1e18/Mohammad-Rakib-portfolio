@@ -3,6 +3,7 @@ import homeImg from "../../Images/home-page.jpg";
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import { Typewriter } from "react-simple-typewriter";
+import { FaDownload, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -73,13 +74,13 @@ const Home = () => {
           detectRetina: true,
         }}
       />
-      <h1 className=" home-info font-bold text-5xl text-slate-200 mt-36">
-        <span className="text-rose-500">M</span>ohammad{" "}
-        <span className="text-rose-500">R</span>akib
+      <h1 className="text-center home-info font-bold text-4xl sm:text-5xl  text-slate-200 mt-36">
+        <span className="text-sky-500">M</span>ohammad{" "}
+        <span className="text-sky-500">R</span>akib
       </h1>
-      <h1 className="home-info  text-3xl text-slate-100 mt-5">
+      <h1 className="home-info  text-2xl sm:text-3xl text-slate-100 mt-5">
         <span>I'm expert in </span>
-        <span className="text-rose-200 underline">
+        <span className="text-sky-200 underline">
           <Typewriter
             words={[
               "Web Development",
@@ -88,7 +89,7 @@ const Home = () => {
               "MERN Stack",
               "Problem Solving",
             ]}
-            loop={150}
+            loop={550}
             cursor
             cursorStyle="|"
             typeSpeed={50}
@@ -97,6 +98,20 @@ const Home = () => {
           />
         </span>
       </h1>
+      <div className="mt-12">
+        <a
+          className="rounded-full text-center font-bold bg-transparent  bg-sky-600 hover:bg-sky-500 transition ease-in-out duration-300 text-slate-200 py-2 px-4 flex justify-center items-center gap-2  h-10 "
+          href="/Mohammad Rakib-Resume.pdf"
+          download
+        >
+          DOWNLOAD RESUME <FaDownload />
+        </a>
+      </div>
+      <div className="flex flex-col gap-y-4 px-2 py-3 rounded-xl bg-slate-600 bg-opacity-50 text-slate-100 fixed top-20 left-5 lg:left-auto lg:top-10 lg:right-10">
+        <FaGithub className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+        <FaFacebook className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+        <FaLinkedin className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+      </div>
     </div>
   );
 };

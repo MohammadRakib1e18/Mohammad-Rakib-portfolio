@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="bg-slate-800  w-full flex justify-center items-center  lg:hidden">
-      <h1 className="text-2xl font-bold text-slate-200 w-4/5 text-center">
+      <h1 className="text-[22px] font-serif sm:text-4xl font-bold text-slate-200 w-4/5 text-center">
         Mohammad Rakib
       </h1>
       <label htmlFor="my-drawer-2" tabIndex={2} className="btn btn-ghost">

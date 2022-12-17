@@ -4,8 +4,8 @@ import Blog from "../components/Blog/Blog";
 import Contact from "../components/Contact/Contact";
 import Home from "../components/Home/Home";
 import Portfolio from "../components/Portfolio/Portfolio";
+import PortfolioDetails from "../components/Portfolio/PortfolioDetails";
 import Qualification from "../components/Qualification/Qualification";
-import Services from "../components/Services/Services";
 import MainLayout from "../Layout/MainLayout";
 
 export const routes = createBrowserRouter([
@@ -38,8 +38,8 @@ export const routes = createBrowserRouter([
                 element: <Qualification></Qualification>
             },
             {
-                path: '/services',
-                element: <Services></Services>
+                path: '/portfolioDetails/:id',
+                element: <PortfolioDetails></PortfolioDetails>
             }
         ]
     }

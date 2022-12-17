@@ -1,27 +1,25 @@
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
 
-    const downloadPdf = () => {
-      // using Java Script method to get PDF file
-      fetch("Mohammad Rakib-Resume.pdf").then((response) => {
-        response.blob().then((blob) => {
-          // Creating new object of PDF file
-          const fileURL = window.URL.createObjectURL(blob);
-          // Setting various property values
-          let alink = document.createElement("a");
-          alink.href = fileURL;
-          alink.download = "Mohammad Rakib-Resume.pdf";
-          alink.click();
-        });
-      });
-    };
-
   return (
-    <div className="p-24 min-h-screen font-serif">
-      <h2 className="text-sky-500 font-bold text-5xl border-b-2 border-dotted pb-2 border-b-slate-500">
-        About Me
-      </h2>
+    <div className="p-4 md:p-24 pt-12 min-h-screen font-serif" >
+      <div className="flex justify-between items-end border-b-2 border-dotted border-b-slate-500">
+        <h2 className="text-sky-500 font-bold text-3xl sm:text-4xl">
+          About Me
+        </h2>
+        <a
+          className=" text-center font-bold bg-transparent border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:bg-opacity-40 hover:text-slate-200 px-4 rounded-full"
+          href="/Mohammad Rakib-Resume.pdf"
+          download
+        >
+          <span className="hidden md:flex items-center">DOWNLOAD RESUME</span>
+          <span className="block md:hidden pb-1 scale-150 text-center text-sky-400">
+            <FaDownload />
+          </span>
+        </a>
+      </div>
       <div className="text-slate-200 space-y-5 mt-5 text-lg text-justify">
         <p className="">
           Hello, I'm a{" "}
@@ -42,15 +40,27 @@ const About = () => {
           projects. I'm ready to take a new challenge to complete a new project.
         </p>
       </div>
-      <div className="mt-8">
-        <a
-          className="inline-block text-center font-bold bg-transparent border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-slate-200 py-2 px-4 rounded-none"
-          href="/Mohammad Rakib-Resume.pdf"
-          download
-        >
-          DOWNLOAD RESUME
-        </a>
-        {/* <button>DOWNLOAD MY RESUME</button> */}
+
+      <div className="pt-24 pr-4">
+        <h2 className="text-sky-500 font-bold text-3xl sm:text-4xl border-b-2 border-dotted border-b-slate-500 font-serif">
+          What I Offer
+        </h2>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="bg-slate-600 hover:scale-105 transition ease-in-out duration-300 p-4 border border-cyan-400 hover:border-sky-500 rounded-md text-slate-200 flex items-center flex-col">
+            <h1 className="text-5xl ">
+              <span className="lnr lnr-laptop"></span>
+            </h1>
+            <h2 className="text-xl font-bold text-cyan-300">Web Development</h2>
+          </div>
+          <div className="bg-slate-600 hover:scale-105 transition ease-in-out duration-300 p-4 border border-cyan-400 hover:border-sky-500 rounded-md text-slate-200 flex items-center flex-col">
+            <h1 className="text-5xl lnr lnr-laptop-phone">
+              <span className=""></span>
+            </h1>
+            <h2 className="text-xl font-bold text-cyan-300">
+              Responsive Design
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   );

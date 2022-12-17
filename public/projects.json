@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "3",
+    "data": [
+      {
+        "img": "https://i.ibb.co/Dbwtydy/todo0.png",
+        "details": "Responsive Design"
+      },
+      {
+        "img": "https://i.ibb.co/ysjVJJ2/todo1.png",
+        "details": "The home page of the site"
+      },
+      {
+        "img": "https://i.ibb.co/2M9sPgR/todo2.png",
+        "details": "You need to register before use it. "
+      },
+      {
+        "img": "https://i.ibb.co/QrqWvsd/todo3.png",
+        "details": "Check and show warnings-modal if password doesn't match"
+      },
+      {
+        "img": "https://i.ibb.co/DDSwwvw/todo4.png",
+        "details": "After registration, you can add task"
+      },
+      {
+        "img": "https://i.ibb.co/4m3zZF1/todo5.png",
+        "details": "Easily track the completed tasks"
+      },
+      {
+        "img": "https://i.ibb.co/CQ0V3kL/todo6.png",
+        "details": "Navigate to the completed tasks"
+      },
+      {
+        "img": "https://i.ibb.co/7YdTwrZ/todo7.png",
+        "details": "Filter out the incomplete tasks"
+      },
+      {
+        "img": "https://i.ibb.co/4Nk5LH2/todo8.png",
+        "details": "If you want to update, it's just one click away!"
+      },
+      {
+        "img": "https://i.ibb.co/7NJ524r/todo9.png",
+        "details": "Checkout the features of the site"
+      },
+      {
+        "img": "https://i.ibb.co/RzBV02B/todo10.png",
+        "details": "The developer"
+      },
+      {
+        "img": "https://i.ibb.co/ccqf2jh/todo11.png",
+        "details": "The site is totally free."
+      },
+      {
+        "img": "https://i.ibb.co/q9Q8CsM/todo12.png",
+        "details": "The document has video to guide the user"
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "data": [
+      {
+        "img": "https://i.ibb.co/LtDy82s/resale0.png",
+        "details": "The home page"
+      },
+      {
+        "img": "https://i.ibb.co/zXJvMVx/resale4.png",
+        "details": "All available product's categories"
+      },
+      {
+        "img": "https://i.ibb.co/x73x4hx/resale11.png",
+        "details": "Several sub-categories under every category."
+      },
+      {
+        "img": "https://i.ibb.co/2WvTz49/resale1.png",
+        "details": "Login system with google sign-in"
+      },
+      {
+        "img": "https://i.ibb.co/Bz08Nty/resale2.png",
+        "details": "A new user can be a buyer or a seller"
+      },
+      {
+        "img": "https://i.ibb.co/bKGNt0S/resale3.png",
+        "details": "As a buyer, I can check my orders"
+      },
+
+      {
+        "img": "https://i.ibb.co/yPpfnnz/resale5.png",
+        "details": "customer feedback with swiper.js"
+      },
+      {
+        "img": "https://i.ibb.co/LSr0Wk0/resale6.png",
+        "details": "Add a item (by a seller)"
+      },
+      {
+        "img": "https://i.ibb.co/prPqbDK/resale7.png",
+        "details": "product information"
+      },
+      {
+        "img": "https://i.ibb.co/b1DDRYj/resale8.png",
+        "details": "Admin can check the site's total seller"
+      },
+      {
+        "img": "https://i.ibb.co/SwF8SJJ/resale9.png",
+        "details": "Admin can check the site's total buyers"
+      },
+      {
+        "img": "https://i.ibb.co/Xb35gb8/resale10.png",
+        "details": "A buyer can advertised his products"
+      }
+    ]
+  },
+  {
+    "_id": "1",
+    "data": [
+      {
+        "img": "https://i.ibb.co/4NZd1LP/resturant0.png",
+        "details": "Home page Banner"
+      },
+      {
+        "img": "https://i.ibb.co/Dp9TZLg/resturant1.png",
+        "details": "All Food items collection"
+      },
+      {
+        "img": "https://i.ibb.co/GWxMNn1/resturant2.png",
+        "details": "Weekly top 3 food items"
+      },
+      {
+        "img": "https://i.ibb.co/XXf9L8s/resturant3.png",
+        "details": "Specific food dish"
+      },
+      {
+        "img": "https://i.ibb.co/RbXbtjB/resturant4.png",
+        "details": "You can get offer at my food store!"
+      },
+      {
+        "img": "https://i.ibb.co/VWtXptJ/resturant5.png",
+        "details": "Login page(email, google, github)"
+      },
+      {
+        "img": "https://i.ibb.co/87brF2g/resturant6.png",
+        "details": "My published blogs"
+      },
+      {
+        "img": "https://i.ibb.co/yy942fs/resturant7.png",
+        "details": "all customers feedbacks"
+      },
+      {
+        "img": "https://i.ibb.co/RzZ3Yk8/resturant8.png",
+        "details": "current user's feedbacks"
+      },
+      {
+        "img": "https://i.ibb.co/SfFLb6d/resturant9.png",
+        "details": "You can update/delete your review"
+      },
+      {
+        "img": "https://i.ibb.co/GQXSQH9/resturant10.png",
+        "details": "BKash Payment method"
+      },
+      {
+        "img": "https://i.ibb.co/pvvNLKm/resturant11.png",
+        "details": "Stripe payment(not available right now)"
+      },
+      {
+        "img": "https://i.ibb.co/NTGWJbj/resturant12.png",
+        "details": "A valid user can add product."
+      }
+    ]
+  }
+]
