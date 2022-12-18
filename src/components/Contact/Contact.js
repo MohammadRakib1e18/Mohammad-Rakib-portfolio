@@ -3,7 +3,7 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import bgImg2 from "../../Images/bg-2.jpg";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -48,9 +48,38 @@ const Contact = () => {
             <span>+880 1771909209</span>
           </p>
           <p className="flex  justify-around text-slate-100 pb-1">
-            <FaGithub className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
-            <FaFacebook className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
-            <FaLinkedin className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+            <a
+              href="https://github.com/MohammadRakib1e18"
+              target={"_blank"}
+              rel="noreferrer"
+              title="Github"
+            >
+              <FaGithub className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+            </a>
+            <a
+              href="https://www.facebook.com/rakib.molla.9634340/"
+              target={"_blank"}
+              rel="noreferrer"
+              title="Facebook"
+            >
+              <FaFacebook className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mohammad-rakib1/"
+              target={"_blank"}
+              rel="noreferrer"
+              title="Linkedin"
+            >
+              <FaLinkedin className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+            </a>
+            <a
+              href="https://wa.me/8801771909209"
+              target={"_blank"}
+              rel="noreferrer"
+              title="Whatsapp"
+            >
+              <FaWhatsappSquare className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
+            </a>
           </p>
         </div>
       </div>

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { Link } from "react-router-dom";
 import project1 from "../../Images/project1.png";
 import project2 from "../../Images/project2.png";
 import project3 from "../../Images/project3.png";
 import "react-photo-view/dist/react-photo-view.css";
+import DetailsModal from "./DetailsModal";
 
 const portfolioInfo = [
   {
@@ -12,8 +13,11 @@ const portfolioInfo = [
     title: "Tomy Mia Kitchen Table",
     info: [
       "This is a Single Page Application (SPA)",
-      "User can provide review.",
+      "BKash and Stripe (upcoming) payment system.",
+      "User can provide review, add product",
       "Zoom the photo across the whole screen.",
+      "A valid user can edit and delete his/her review.",
+      "Desktop and mobile responsive site.",
     ],
     sites: [
       "https://kitchen-table-25175.web.app/",
@@ -21,6 +25,17 @@ const portfolioInfo = [
       "https://github.com/MohammadRakib1e18/tomy-mia-kitchen-table-server-site",
     ],
     names: ["Live", "Client", "Server"],
+    technologies: [
+      "ReactJS",
+      "MongoDB",
+      "ExpressJS",
+      "React Router Dom",
+      "Firebase",
+      "TailwindCSS and it's libraries",
+      "React Photo View",
+      "React Hot Toast",
+      "Sweet Alert2",
+    ],
   },
   {
     img: project2,
@@ -29,6 +44,12 @@ const portfolioInfo = [
       "MERN Stack site with Admin Dashboard.",
       "3 types of user: seller, buyer and admin",
       "Slider with Swiper.js",
+      "This is a Single Page Application (SPA)",
+      "A buyer can only buy products, keep wishlist",
+      "A seller can add product and advertise his products",
+      "Admin can delete any seller, buyer or user.",
+      "Animation effect with AOS",
+      "Desktop and mobile responsive site.",
     ],
     sites: [
       "https://resale-gym-equipment.web.app/",
@@ -36,6 +57,19 @@ const portfolioInfo = [
       "https://github.com/MohammadRakib1e18/ResalePort.com-server",
     ],
     names: ["Live", "Client", "Server"],
+    technologies: [
+      "ReactJS",
+      "React Query",
+      "React Hook Form",
+      "React Router Dom",
+      "MongoDB",
+      "ExpressJS",
+      "Firebase",
+      "TailwindCSS and it's libraries",
+      "React Photo View",
+      "React Hot Toast",
+      "React icons",
+    ],
   },
   {
     img: project3,
@@ -44,16 +78,24 @@ const portfolioInfo = [
       "JavaScript DOM has been used to manipulate data. ",
       "Responsive Layout ",
       "Complete, Update and Delete features.",
+      "Easy to navigate",
+      "Password matching and Registration with Modal",
+      "Mark a task 'completed' if one wishes",
+      "A video kept in Docs to guide the user",
     ],
     sites: [
       "https://get-ready-to-shine.netlify.app/",
       "https://github.com/MohammadRakib1e18/to-do-app",
     ],
     names: ["Live", "Client"],
+    technologies: ["Javascript", "Bootstrap5", "Html", "Css"],
   },
 ];
 
 const Portfolio = () => {
+  const [show, setShow] = useState(false);
+  const [data, setData] = useState({});
+
   return (
     <div className="p-4 md:p-12 pr-4 mb-12">
       <h2 className="text-sky-500 font-bold text-4xl sm:text-5xl border-b-2 border-dotted pb-4 border-b-slate-500">
@@ -76,9 +118,10 @@ const Portfolio = () => {
               <div>
                 <h2 className="text-lg underline mb-2">Short Description</h2>
                 <ol>
-                  {info.info.map((data) => (
-                    <li>{data}</li>
-                  ))}
+                  {info.info.map((data, index) => {
+                    if (index < 3) return <li>{data}</li>;
+                    return null;
+                  })}
                 </ol>
                 <div className="dropdown dropdown-bottom">
                   <label
@@ -98,7 +141,7 @@ const Portfolio = () => {
                       </Link>
                     </li>
                     <li>
-                      <label htmlFor="my-modal-3">
+                      <label htmlFor="my-modal-3" onClick={() => {setShow(true); setData(info)}}>
                         More Description
                       </label>
                     </li>
@@ -122,24 +165,7 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      <input type="checkbox" id="my-modal-3" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box relative">
-          <label
-            htmlFor="my-modal-3"
-            className="btn btn-sm btn-circle absolute right-2 top-2"
-          >
-            ✕
-          </label>
-          <h3 className="text-lg font-bold">
-            Congratulations random Internet user!
-          </h3>
-          <p className="py-4">
-            You've been selected for a chance to get one year of subscription to
-            use Wikipedia for free!
-          </p>
-        </div>
-      </div>
+      <DetailsModal show={show} setShow={setShow} data={data}></DetailsModal>
     </div>
   );
 };
