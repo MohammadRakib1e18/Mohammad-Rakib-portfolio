@@ -107,7 +107,7 @@ const Home = () => {
           DOWNLOAD RESUME <FaDownload />
         </a>
       </div>
-      <div className="flex flex-col gap-y-4 px-2 py-3 rounded-xl bg-slate-600 bg-opacity-50 text-slate-100 fixed top-20 left-5 lg:left-auto lg:top-10 lg:right-10">
+      <div className="flex flex-col gap-y-3 sm:gap-y-4 px-2 py-3 rounded-xl bg-slate-600 bg-opacity-50 text-slate-100 fixed top-[60px]  left-5 lg:left-auto lg:top-10 lg:right-10">
         <a
           href="https://github.com/MohammadRakib1e18"
           target={"_blank"}
