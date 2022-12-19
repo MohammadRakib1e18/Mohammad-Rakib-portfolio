@@ -98,13 +98,13 @@ const Portfolio = () => {
 
   return (
     <div className="p-4 md:p-12 pr-4 mb-12">
-      <h2 className="text-sky-500 font-bold text-4xl sm:text-5xl border-b-2 border-dotted pb-4 border-b-slate-500">
+      <h2 className="text-shadow text-sky-500 font-bold text-4xl sm:text-5xl border-b-2 border-dotted pb-4 border-b-slate-500">
         Projects
       </h2>
       <div className="mt-6 grid grid-cols-1 space-y-12 text-slate-200">
         {portfolioInfo.map((info, index) => (
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="h-64 w-full md:w-1/2 overflow-hidden transition ease-in-out">
+          <div className=" flex flex-col md:flex-row gap-8">
+            <div className="box-shadow h-64 w-full md:w-1/2 overflow-hidden transition ease-in-out">
               <img
                 src={info.img}
                 alt=""
@@ -112,7 +112,7 @@ const Portfolio = () => {
               />
             </div>
             <div className=" flex flex-col justify-between w-full md:w-1/2">
-              <h2 className=" text-xl sm:text-2xl text-sky-400 font-bold mb-3">
+              <h2 className="text-shadow text-xl sm:text-2xl text-sky-400 font-bold mb-3">
                 {info.title}
               </h2>
               <div>
@@ -141,7 +141,13 @@ const Portfolio = () => {
                       </Link>
                     </li>
                     <li>
-                      <label htmlFor="my-modal-3" onClick={() => {setShow(true); setData(info)}}>
+                      <label
+                        htmlFor="my-modal-3"
+                        onClick={() => {
+                          setShow(true);
+                          setData(info);
+                        }}
+                      >
                         More Description
                       </label>
                     </li>

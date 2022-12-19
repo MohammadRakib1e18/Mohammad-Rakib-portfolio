@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
       <div className="p-4 md:p-12 pr-4">
-        <h2 className="text-sky-500 font-bold text-3xl sm:text-4xl border-b-2 border-dotted pb-2 border-b-slate-500 font-serif">
+        <h2 className="text-sky-500 font-bold text-3xl sm:text-4xl border-b-2 border-dotted pb-2 border-b-slate-500 font-serif text-shadow ">
           Blog Store
         </h2>
         <div className="flex justify-center items-center">

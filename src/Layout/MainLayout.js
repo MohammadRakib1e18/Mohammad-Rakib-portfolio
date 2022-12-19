@@ -11,7 +11,7 @@ const menu = (
       <img
         src={user}
         alt=""
-        className="hover:scale-110  w-full rounded-full border-2 border-sky-500 transition duration-700 ease-in-out"
+        className=" hover:scale-110  w-full rounded-full border-2 border-sky-500 transition duration-700 ease-in-out"
       />
     </div>
 

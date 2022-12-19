@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import { Typewriter } from "react-simple-typewriter";
 import { FaDownload, FaFacebook, FaGithub, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
+import './Home.css';
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -98,14 +99,11 @@ const Home = () => {
           />
         </span>
       </h1>
-      <div className="mt-12">
-        <a
-          className="rounded-full text-center font-bold bg-transparent  bg-sky-600 hover:bg-sky-500 transition ease-in-out duration-300 text-slate-200 py-2 px-4 flex justify-center items-center gap-2  h-10 "
-          href="/Mohammad Rakib-Resume.pdf"
-          download
-        >
-          DOWNLOAD RESUME <FaDownload />
+      <div className="mt-12 overflow-hidden z-10 relative rounded-border rounded-full text-center font-bold bg-transparent  bg-sky-500 transition ease-in-out duration-300 text-slate-200 py-2 px-4 flex justify-center items-center gap-2  h-10 ">
+        <a className="" href="/Mohammad Rakib-Resume.pdf" download>
+          DOWNLOAD RESUME
         </a>
+        <FaDownload />
       </div>
       <div className="flex flex-col gap-y-3 sm:gap-y-4 px-2 py-3 rounded-xl bg-slate-600 bg-opacity-50 text-slate-100 fixed top-[60px]  left-5 lg:left-auto lg:top-10 lg:right-10">
         <a
@@ -113,6 +111,7 @@ const Home = () => {
           target={"_blank"}
           rel="noreferrer"
           title="Github"
+          className="text-slate-900 bg-slate-100"
         >
           <FaGithub className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
         </a>
@@ -121,6 +120,7 @@ const Home = () => {
           target={"_blank"}
           rel="noreferrer"
           title="Facebook"
+          className="bg-slate-100 text-blue-600"
         >
           <FaFacebook className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
         </a>
@@ -129,6 +129,7 @@ const Home = () => {
           target={"_blank"}
           rel="noreferrer"
           title="Linkedin"
+          className="text-sky-600 bg-slate-100 "
         >
           <FaLinkedin className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
         </a>
@@ -137,6 +138,7 @@ const Home = () => {
           target={"_blank"}
           rel="noreferrer"
           title="Whatsapp"
+          className="text-green-500  bg-slate-100 "
         >
           <FaWhatsappSquare className="scale-150 hover:scale-[1.8] transition ease-in-out duration-300" />
         </a>

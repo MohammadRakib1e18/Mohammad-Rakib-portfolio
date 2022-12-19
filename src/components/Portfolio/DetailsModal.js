@@ -6,7 +6,7 @@ const DetailsModal = ({ show, setShow, data }) => {
     return (
       <>
         <input type="checkbox" id="my-modal-3" className="modal-toggle" />
-        <div className="modal bg-slate-800 bg-opacity-80">
+        <div className="font-serif modal bg-slate-800 bg-opacity-80">
           <div className="modal-box relative bg-sky-800">
             <label
               htmlFor="my-modal-3"
@@ -15,8 +15,8 @@ const DetailsModal = ({ show, setShow, data }) => {
             >
               ✕
             </label>
-            <h2 className="text-lg mb-2 pl-2 rounded-xl bg-sky-600 text-sky-100 font-semibold text-center">
-              Short Description
+            <h2 className="text-lg mb-2 pl-2 rounded-xl bg-sky-600 text-sky-100 font-semibold text-center text-shadow">
+              Description
             </h2>
             <ol className="text-slate-200">
               {info?.map((data, index) => (
@@ -25,7 +25,7 @@ const DetailsModal = ({ show, setShow, data }) => {
                 </li>
               ))}
             </ol>
-            <h2 className="mt-8 text-lg mb-4 pl-2 rounded-xl bg-sky-600 text-sky-100 font-semibold text-center">
+            <h2 className="mt-8 text-lg mb-4 pl-2 rounded-xl bg-sky-600 text-sky-100 font-semibold text-center text-shadow">
               Technologies
             </h2>
             <div className="flex flex-wrap flex-shrink-1 gap-2">

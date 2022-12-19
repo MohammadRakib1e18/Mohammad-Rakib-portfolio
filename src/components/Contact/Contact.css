@@ -30,10 +30,9 @@ input[type="submit"] {
   cursor: pointer;
 }
 .submit-btn {
-  border: 2px solid rgb(107, 183, 233);
+  border: 2px solid rgb(9, 142, 250);
   position: relative;
   overflow: hidden;
-  background-color: transparent;
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
@@ -41,7 +40,7 @@ input[type="submit"] {
   transition: 0.4s ease-in;
   z-index: 1;
   font-family: inherit;
-  color: rgb(107, 183, 233);
+  color: rgb(9, 142, 250);
 }
 .submit-btn::before {
   content: "";

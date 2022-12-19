@@ -4,9 +4,9 @@ import { FaDownload } from "react-icons/fa";
 const About = () => {
 
   return (
-    <div className="p-4 md:p-24 pt-12 min-h-screen font-serif" >
+    <div className="p-4 md:p-24 pt-12 min-h-screen font-serif">
       <div className="flex justify-between items-end border-b-2 border-dotted border-b-slate-500">
-        <h2 className="text-sky-500 font-bold text-3xl sm:text-4xl">
+        <h2 className="text-shadow text-sky-500 font-bold text-3xl sm:text-4xl">
           About Me
         </h2>
         <a
@@ -42,7 +42,7 @@ const About = () => {
       </div>
 
       <div className="pt-24 pr-4">
-        <h2 className="text-sky-500 font-bold text-3xl sm:text-4xl border-b-2 border-dotted border-b-slate-500 font-serif">
+        <h2 className="text-shadow text-sky-500 font-bold text-3xl sm:text-4xl border-b-2 border-dotted border-b-slate-500 font-serif">
           What I Offer
         </h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12">
