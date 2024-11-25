@@ -5,78 +5,96 @@ import { FaDownload } from "react-icons/fa";
 import user from "../Images/Mohammad Rakib.png";
 import "./MainLayout.css";
 
-const menu = (
-  <>
-    <div className=" avatar online h-32 w-32 mx-auto">
-      <img
-        src={user}
-        alt=""
-        className=" hover:scale-110  w-full rounded-full border-2 border-sky-500 transition duration-700 ease-in-out"
-      />
-    </div>
 
-    <NavLink
-      to="/"
-      className=" transition duration-400 ease-in-out  bg-slate-700 rounded-full py-1 hover:bg-sky-600 flex pl-10 items-center h-9"
-    >
-      <span className="lnr lnr-home mr-1"></span>
-      <li>Home</li>
-    </NavLink>
-    <NavLink
-      to="/about"
-      className=" transition duration-400 ease-in-out  bg-slate-700 rounded-full py-1  hover:bg-sky-600 flex pl-10  items-center h-9"
-    >
-      <span class="lnr lnr-user mr-1"></span>
-      <li>About me</li>
-    </NavLink>
-    <NavLink
-      to="/portfolio"
-      className=" transition duration-400 ease-in-out  pl-10 bg-slate-700 rounded-full py-1  hover:bg-sky-600 flex  items-center h-9"
-    >
-      <span class="lnr lnr-film-play mr-1"></span>
-      <li>Portfolio</li>
-    </NavLink>
-
-    <NavLink
-      to="/qualification"
-      className=" transition duration-400 ease-in-out pl-10 bg-slate-700  rounded-full py-1  hover:bg-sky-600 flex items-center h-9"
-    >
-      <span class="lnr lnr-graduation-hat mr-1 scale-y-150"></span>
-      <li>Qualification</li>
-    </NavLink>
-    <NavLink
-      to="/blogs"
-      className=" transition duration-400 ease-in-out pl-10 bg-slate-700  rounded-full py-1  hover:bg-sky-600 flex items-center h-9"
-    >
-      <span class="lnr lnr-database mr-1"></span>
-      <li>Blogs</li>
-    </NavLink>
-    <NavLink
-      to="/contact"
-      className=" transition duration-400 ease-in-out pl-10 bg-slate-700  rounded-full py-1  hover:bg-sky-600 flex items-center h-9"
-    >
-      <span class="lnr lnr-envelope mr-1"></span>
-      <li>Contact</li>
-    </NavLink>
-    <a
-      className="transition duration-400 ease-in-out flex justify-center items-center h-10 rounded-full text-center font-bold bg-transparent border-2 border-sky-600 text-sky-500 hover:bg-sky-600 hover:text-slate-200 py-2 px-4 "
-      href="https://www.linkedin.com/in/mohammad-rakib1/"
-      target={"_blank"}
-      rel="noreferrer"
-    >
-      HIRE ME
-    </a>
-    <a
-      className=" transition duration-400 ease-in-out flex justify-center items-center gap-2 -mt-4 h-10 rounded-full text-center font-bold bg-transparent border-2 border-sky-600 text-sky-500 hover:bg-sky-600 hover:text-slate-200 py-2 px-1 "
-      href="/Mohammad Rakib-Resume.pdf"
-      download
-    >
-      RESUME <FaDownload />
-    </a>
-  </>
-);
 
 const MainLayout = () => {
+  const linkResume =
+		"https://drive.google.com/file/d/1EBR8ZwBEx5XhVZNTcHlYvRUcEr24rr9r/view?usp=drive_link";
+  const fileIdResume = linkResume.split("/").reduce((mxId = "", currId) => {
+		return currId.length > mxId.length ? currId : mxId;
+  });
+
+  const linkCv =
+		"https://drive.google.com/file/d/1IZ63bbBbmtNqQnL-_gZ2daI-qbE3a9tO/view?usp=drive_link";
+  const fileIdCv = linkCv.split("/").reduce((mxId = "", currId) => {
+		return currId.length > mxId.length ? currId : mxId;
+  });
+
+  const menu = (
+		<>
+			<div className=" avatar online h-32 w-32 mx-auto">
+				<img
+					src={user}
+					alt=""
+					className=" hover:scale-110  w-full rounded-full border-2 border-sky-500 transition duration-700 ease-in-out"
+				/>
+			</div>
+
+			<NavLink
+				to="/"
+				className=" transition duration-400 ease-in-out  bg-slate-700 rounded-full py-1 hover:bg-sky-600 flex pl-10 items-center h-9"
+			>
+				<span className="lnr lnr-home mr-1"></span>
+				<li>Home</li>
+			</NavLink>
+			<NavLink
+				to="/about"
+				className=" transition duration-400 ease-in-out  bg-slate-700 rounded-full py-1  hover:bg-sky-600 flex pl-10  items-center h-9"
+			>
+				<span class="lnr lnr-user mr-1"></span>
+				<li>About me</li>
+			</NavLink>
+			<NavLink
+				to="/portfolio"
+				className=" transition duration-400 ease-in-out  pl-10 bg-slate-700 rounded-full py-1  hover:bg-sky-600 flex  items-center h-9"
+			>
+				<span class="lnr lnr-film-play mr-1"></span>
+				<li>Portfolio</li>
+			</NavLink>
+
+			<NavLink
+				to="/qualification"
+				className=" transition duration-400 ease-in-out pl-10 bg-slate-700  rounded-full py-1  hover:bg-sky-600 flex items-center h-9"
+			>
+				<span class="lnr lnr-graduation-hat mr-1 scale-y-150"></span>
+				<li>Qualification</li>
+			</NavLink>
+			<NavLink
+				to="/blogs"
+				className=" transition duration-400 ease-in-out pl-10 bg-slate-700  rounded-full py-1  hover:bg-sky-600 flex items-center h-9"
+			>
+				<span class="lnr lnr-database mr-1"></span>
+				<li>Blogs</li>
+			</NavLink>
+			<NavLink
+				to="/contact"
+				className=" transition duration-400 ease-in-out pl-10 bg-slate-700  rounded-full py-1  hover:bg-sky-600 flex items-center h-9"
+			>
+				<span class="lnr lnr-envelope mr-1"></span>
+				<li>Contact</li>
+			</NavLink>
+			<a
+				className="transition duration-400 ease-in-out flex justify-center items-center h-10 rounded-full text-center font-bold bg-transparent border-2 border-sky-600 text-sky-500 hover:bg-sky-600 hover:text-slate-200 py-2 px-4 "
+				href="https://www.linkedin.com/in/mohammad-rakib1/"
+				target={"_blank"}
+				rel="noreferrer"
+			>
+				HIRE ME
+			</a>
+			<a
+				className=" transition duration-400 ease-in-out flex justify-center items-center gap-2 -mt-4 h-10 rounded-full text-center font-bold bg-transparent border-2 border-sky-600 text-sky-500 hover:bg-sky-600 hover:text-slate-200 py-2 px-1 "
+				href={`https://drive.google.com/uc?export=download&id=${fileIdResume}`}
+			>
+				RESUME <FaDownload />
+			</a>
+			<a
+				className=" transition duration-400 ease-in-out flex justify-center items-center gap-2 -mt-4 h-10 rounded-full text-center font-bold bg-transparent border-2 border-sky-600 text-sky-500 hover:bg-sky-600 hover:text-slate-200 py-2 px-1 "
+				href={`https://drive.google.com/uc?export=download&id=${fileIdCv}`}
+			>
+				CV <FaDownload />
+			</a>
+		</>
+  );
   return (
     <div>
       <Navbar></Navbar>
